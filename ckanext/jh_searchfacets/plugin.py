@@ -17,19 +17,16 @@ class Jh_SearchfacetsPlugin(plugins.SingletonPlugin):
         facets_dict['groups'] = plugins.toolkit._('Sectors')
         facets_dict['organization'] = plugins.toolkit._('Partners')
         facets_dict['states'] = plugins.toolkit._('Geography: States')
-        facets_dict['court'] = plugins.toolkit._('Court Hierarchy')
         return  facets_dict
 
     def organization_facets(self, facets_dict, organization_type, package_type):
         facets_dict['groups'] = plugins.toolkit._('Sectors')
         facets_dict['organization'] = plugins.toolkit._('Partners')
         facets_dict['states'] = plugins.toolkit._('Geography: States')
-        facets_dict['court'] = plugins.toolkit._('Court Hierarchy')
         return  facets_dict
 
     def group_facets(self, facets_dict, group_type, package_type):
         facets_dict['groups'] = plugins.toolkit._('Sectors')
         facets_dict['organization'] = plugins.toolkit._('Partners')
         facets_dict['states'] = plugins.toolkit._('Geography: States')
-        facets_dict['court'] = plugins.toolkit._('Court Hierarchy')
         return facets_dict
